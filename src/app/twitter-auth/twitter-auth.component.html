@@ -1,0 +1,7 @@
+<button (click)="loginWithTwitter()" *ngIf="!(authService.user | async)" >
+    Twitter Login
+  </button>
+
+<button (click)="logoutWithTwitter()" *ngIf="authService.user | async">
+  Twitter Logout
+</button>

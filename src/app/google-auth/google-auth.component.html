@@ -1,0 +1,7 @@
+<button (click)="loginWithGoogle()" *ngIf="!(authService.user | async)" >
+    Google Login
+  </button>
+
+<button (click)="logout()" *ngIf="authService.user | async">
+  Google Logout
+</button>

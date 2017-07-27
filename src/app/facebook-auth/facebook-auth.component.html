@@ -1,0 +1,7 @@
+<button (click)="loginWithFacebook()" *ngIf="!(authService.user | async)" >
+    Facebook Login
+  </button>
+
+<button (click)="logoutWithFacebook()" *ngIf="authService.user | async">
+  Facebook Logout
+</button>

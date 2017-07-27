@@ -1,0 +1,7 @@
+<button (click)="loginWithGitHub()" *ngIf="!(authService.user | async)" >
+    GitHub Login
+  </button>
+
+<button (click)="logoutWithGitHub()" *ngIf="authService.user | async">
+  GitHub Logout
+</button>
